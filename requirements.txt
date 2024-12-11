@@ -4,4 +4,4 @@ groq==0.13.0
 pandas==2.2.2
 streamlit==1.40.2
 python-dotenv==1.0.1
-pysqlite3-binary>= 3.35.0
+pysqlite3-binary
