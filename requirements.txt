@@ -1,7 +1,0 @@
-crewai==0.86.0
-crewai-tools==0.17.0
-groq==0.13.0
-pandas==2.2.2
-streamlit==1.40.2
-python-dotenv==1.0.1
-pysqlite3-binary
