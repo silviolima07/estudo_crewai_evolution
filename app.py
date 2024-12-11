@@ -1,3 +1,4 @@
+import sys
 import streamlit as st
 from post_crew import CrewPostagem
 crew_postagem = CrewPostagem()
