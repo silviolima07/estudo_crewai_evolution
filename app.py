@@ -16,7 +16,7 @@ st.sidebar.image(img0, caption="", use_container_width=True)
 
 tema = st.text_input ('Digite o tópico para a postagem ', 'IA na saúde ')
 
-st.markdown("####### LLM: llama-3.2-3b-preview")
+st.markdown("###### LLM: llama-3.2-3b-preview")
 
 # Botão para iniciar o processo
 if st.button ('Iniciar Processo ') :
