@@ -2,13 +2,20 @@ import os
 from crewai import Agent, Task, Crew, Process
 from crewai_tools import SerperDevTool
 from dotenv import load_dotenv
+import streamlit as st
+from MyLLM import MyLLM
+
+gpt = MyLLM.GPT4o_mini # model='gpt-4o-mini'
+llama = MyLLM.GROQ_LLAMA # model='groq/llama-3.2-3b-preview'
+
+st.markdown("##### LLM: llama-3.2-3b-preview")
 
 load_dotenv()
 
 class CrewPostagem:
     def __init__(self):
         self.search_tool = SerperDevTool()
-        self.llm = "gpt-4o-mini"
+        self.llm = llama
         self.crew = self._criar_crew()
 
     def _criar_crew(self):
